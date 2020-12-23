@@ -1,0 +1,201 @@
+$bp-mobile-s:20em; //320px
+$bp-mobile-m:23.43em; //375px
+$bp-mobile-l:29.18em; //467px
+$bp-mobile-l2:34.18em; //547px
+$bp-small:39.99em; //639px
+$bp-small2:48em; //768px
+$bp-large:59.5em; //952px
+$bp-large1:64em; //1024px
+$bp-4xl:200em; //1600px
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //10px/16px=62.5 -> 1rem=10px
+}
+
+.font {
+    &__1 {
+        font-family: 'Courgette', cursive;
+    }
+    &__2 {
+        font-family: 'Caveat', cursive;
+    }
+    &__3 {
+        font-family: 'Anton', sans-serif;
+    }
+    &__4 {
+        font-family: 'Satisfy', cursive;
+    }
+    &__5 {
+        font-family: 'Dancing Script', cursive;
+    }
+}
+
+#particles-js {
+    background-image: url(../img/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+    width: 100vw;
+    height: 100vh;
+}
+
+.part {
+    &__1 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        @media only screen and (max-width: $bp-small2) {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+    }
+    &__2 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 4;
+        grid-column-end: 7;
+        @media only screen and (max-width: $bp-small2) {
+            grid-column-start: 3;
+            grid-column-end: 7;
+        }
+         @media only screen and (max-width: $bp-mobile-l2 ) {
+            grid-column-start: 2;
+            grid-column-end: 7;
+        }
+        &--d{
+         @media only screen and (max-width:$bp-mobile-l){
+         display:none;
+    }
+        }
+    }
+    &__3 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        @media only screen and (max-width: $bp-small2) {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+    &__4 {
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        @media only screen and (max-width: $bp-small2) {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    }
+    &__5 {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        @media only screen and (max-width: $bp-small2) {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+    }
+    &__6 {
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    &__7 {
+        grid-row-start: 6;
+        grid-row-end: 7;
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+}
+
+.icone {
+    &__1 {
+        fill: orange;
+    }
+    &__2 {
+        fill: white;
+    }
+}
+
+.respons {
+    &__1 {
+        @media only screen and (max-width: $bp-small) {
+            margin-top: 4rem;
+        }
+        @media only screen and (max-width: $bp-mobile-l) {
+            margin-top: 8rem;
+        }
+        @media only screen and (max-width: $bp-mobile-m) {
+            margin-top: 10rem;
+        }
+    }
+    &__2{
+        @media only screen and (max-width: $bp-mobile-m) {
+           font-size: 1.75rem;
+           line-height: 2rem;
+        }
+    }
+}
+.nav{
+    opacity:1;
+    &__list{
+       display:none;
+        margin-top:10rem;
+    }
+    &__check{
+        display:none;
+
+    }
+    &__icon{
+
+     display:none;
+       @media only screen and (max-width:$bp-mobile-l){
+         display:inline-block;
+    }
+
+    }
+      &__check:checked ~ &__list{
+          
+        display:inline-block;
+         width:100%; 
+          animation-name: example;
+           animation-duration: 0.8s;
+          animation-direction: normal;
+
+          @keyframes example {
+                    0%   {width:20%;
+                    height:10%;
+                    }
+                 
+               100% {width:100%;
+               height:18%;
+               }
+            }
+    }
+    &__back{
+        background-image: linear-gradient( to right bottom, rgba(#e68a00, 0.8),rgba(#e6e600, 0.8), rgba(#ff6633, 0.8));
+        z-index:100;
+    }
+}

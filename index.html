@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/2.jpg">
+
+
+    <title>Im Developer</title>
+</head>
+
+<body>
+    <!--section-main-->
+    <div class="section">
+        <!--background-&-particles-->
+        <div id="particles-js">
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script>
+            particlesJS.load('particles-js', 'particles.json',
+                function() {
+                    console.log('particles.json loaded...')
+                })
+        </script>
+        <!--brand-on-corner-->
+        <div class="flex flex-row justify-self-center part__1">
+            <h4 class="text-3xl text-white font__3 mt-14">FOTOR</h4>
+            <div class="w-2 h-2 mt-20 ml-1 rounded-full bg-yellow-500"></div>
+        </div>
+        <!--navegation-->
+
+        <div class="part__2 justify-self-center ">
+
+            <ul class="part__2--d flex flex-row text-white text-xl font-bold tracking-normal text-center mt-14 font__1 ">
+                <li class="hover:text-yellow-400 transform duration-500 hover:scale-125  cursor-pointer flex flex-row "><a class="border-b-4 border-yellow-400  border-opacity-0 hover:border-opacity-100">Home</a><svg class="w-4 h-4 mt-2 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></li>
+                <li class="hover:text-yellow-400 transform duration-500 hover:scale-125  ml-8 cursor-pointer"><a class="border-b-4 border-yellow-400  border-opacity-0 hover:border-opacity-100">About</a></li>
+                <li class="hover:text-yellow-400 transform duration-500 hover:scale-125  ml-8 cursor-pointer"><a class="border-b-4 border-yellow-400  border-opacity-0 hover:border-opacity-100">Services</a></li>
+                <li class="hover:text-yellow-400 transform duration-500 hover:scale-125  ml-8 cursor-pointer flex flex-row"><a class="border-b-4 border-yellow-400  border-opacity-0 hover:border-opacity-100">Portfolio</a><svg class="w-4 h-4 mt-2 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></li>
+                <li class="hover:text-yellow-400 transform duration-500 hover:scale-125  ml-8 cursor-pointer flex flex-row"><a class="border-b-4 border-yellow-400  border-opacity-0 hover:border-opacity-100">Blog</a><svg class="w-4 h-4 mt-2 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></li>
+                <li class="hover:text-yellow-400 transform duration-500 hover:scale-125  ml-8 cursor-pointer"><a class="border-b-4 border-yellow-400  border-opacity-0 hover:border-opacity-100">contact</a></li>
+            </ul>
+              <!--navegation-dropdown-->
+        <div class="nav ">
+    <input type="checkbox" class="nav__check  " id="navi-toggel">
+  <label for="navi-toggel" class="absolute ml-10 right-0 top-16 ">
+  <svg class="nav__icon w-16 h-16 text-white hover:text-yellow-400 transform duration-500 hover:scale-125 cursor-pointer mr-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+  </label>
+  <div class="nav__list nav__back rounded-lg  absolute  right-0 top-0 p-2 pr-1">
+   <!--navigation-list-->
+    <ul class=" flex flex-col text-white text-xl font-bold tracking-normal text-center font__1 ">
+                <li class="hover:text-yellow-400 transform duration-500 hover:scale-125  ml-8 cursor-pointer"><a class="border-b-4 border-yellow-400  border-opacity-0 hover:border-opacity-100">Home</a></li>
+                <li class="hover:text-yellow-400 transform duration-500 hover:scale-125  ml-8 cursor-pointer"><a class="border-b-4 border-yellow-400  border-opacity-0 hover:border-opacity-100">About</a></li>
+                <li class="hover:text-yellow-400 transform duration-500 hover:scale-125  ml-8 cursor-pointer"><a class="border-b-4 border-yellow-400  border-opacity-0 hover:border-opacity-100">Services</a></li>
+                <li class="hover:text-yellow-400 transform duration-500 hover:scale-125  ml-8 cursor-pointer"><a class="border-b-4 border-yellow-400  border-opacity-0 hover:border-opacity-100">Portfolio</a></li>
+                <li class="hover:text-yellow-400 transform duration-500 hover:scale-125  ml-8 cursor-pointer"><a class="border-b-4 border-yellow-400  border-opacity-0 hover:border-opacity-100">Blog</a></li>
+                <li class="hover:text-yellow-400 transform duration-500 hover:scale-125  ml-8 cursor-pointer"><a class="border-b-4 border-yellow-400  border-opacity-0 hover:border-opacity-100">contact</a></li>
+            </ul>
+    </div>
+    </div>
+
+        </div>
+        <!--icons-->
+        <div class="flex flex-row part__3 ">
+            <div class="w-12 h-12 p-2 icone__1 mt-32 bg-white rounded-lg ml-16 hover:bg-yellow-50 hover:shadow-md transform duration-500 hover:scale-125 cursor-pointer"><svg class="w-8  h-8"><use xlink:href="img/sprite.svg#icon-facebook1"></use></svg></div>
+            <div class="w-12 h-12 p-2 icone__1 mt-32 bg-white rounded-lg ml-4 hover:bg-yellow-50 hover:shadow-md transform duration-500 hover:scale-125 cursor-pointer"><svg class="w-8 h-8"><use xlink:href="img/sprite.svg#icon-twitter1"></use></svg></div>
+            <div class="w-12 h-12 p-2 icone__1 mt-32 bg-white rounded-lg ml-4 hover:bg-yellow-50 hover:shadow-md transform duration-500 hover:scale-125 cursor-pointer"><svg class="w-8 h-8"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg></div>
+        </div>
+        <!--text-->
+        <div class="part__4 flex flex-col mt-4 ml-10">
+            <div class="flex flex-row">
+                <h3 class="text-4xl text-white font__3 respons__2">IM</h3>
+                <h3 class="text-4xl text-yellow-400 ml-2 border-r-2 border-yellow-400 font__3 respons__2">WEB DEVELOPER</h3>
+            </div>
+            <p class="text-3xl mt-4 text-white font__2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="part__5 ml-10 respons__1">
+            <div class="bg-white rounded-lg p-2 w-44 h-12 flex flex-row transform duration-500 hover:scale-125 hover:bg-yellow-50 hover:shadow-md cursor-pointer "><a class="text-3xl text-yellow-400 font__1">Hire Me</a><svg class="w-6 h-6 text-yellow-400 mt-1 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path></svg></div>
+        </div>
+
+        <div class="bg-white justify-self-center transform -translate-y-16 part__7 w-48 h-48 rounded-full flex flex-col">
+            <div class="bg-white justify-self-center  z-10 shadow-lg  w-16 h-16 rounded-full p-1 transform translate-x-16 -translate-y-10 transform duration-500 hover:scale-125 hover:bg-yellow-50 hover:shadow-md cursor-pointer"><svg class="w-6 h-6 mt-4 ml-4 text-yellow-400 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7"></path></svg></div>
+            <div
+                class="bg-yellow-400  transform translate-x-16 -translate-y-1 w-16 h-16 rounded-full p-4 transform duration-500 hover:scale-125 hover:bg-yellow-500 hover:shadow-md cursor-pointer"><svg class="w-8  h-8   icone__2"><use xlink:href="img/sprite.svg#icon-play3"></use></svg></div>
+    </div>
+    </div>
+</body>
+
+</html>
